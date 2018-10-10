@@ -1,0 +1,9 @@
+*.orig.tar
+*.orig.tar.gz
+*.orig.tar.bzip
+*.orig.tar.xz
+BUILD/*
+*.deb
+*.build
+*.buildinfo
+*.changes

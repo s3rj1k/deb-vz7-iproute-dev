@@ -1,0 +1,35 @@
+Source: iproute2
+Section: net
+Priority: optional
+Maintainer: s3rj1k <evasive.gyron@gmail.com>
+Homepage: https://wiki.linuxfoundation.org/networking/iproute2
+Build-Depends: bison,
+               cm-super-minimal,
+               debhelper (>= 9),
+               flex,
+               iptables-dev,
+               libatm1-dev,
+               libdb-dev,
+               libelf-dev,
+               libmnl-dev,
+               libselinux1-dev,
+               linux-libc-dev,
+               linuxdoc-tools,
+               lynx | lynx-cur,
+               pkg-config,
+               texlive-fonts-recommended,
+               texlive-latex-base,
+               texlive-latex-extra,
+               texlive-latex-recommended
+
+Package: iproute-dev
+Section: libdevel
+Priority: important
+Architecture: any
+Depends: iproute2, ${misc:Depends}, ${shlibs:Depends}
+Multi-Arch: foreign
+Description: headers and library for iproute2
+ The iproute2 suite is a collection of utilities for networking and
+ traffic control.
+ .
+ This package contains developmnet headers and library for iproute2
